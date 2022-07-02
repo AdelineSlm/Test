@@ -30,14 +30,13 @@ string[] NewArray(string[] initialArray)
 }
 string PrintArray(string[] array)
 {
-    int length = array.Length;
     string temp = "[";
-    for (int i = 0; i < length; i++) {
-        if (i < length - 1)
+    for (int i = 0; i < array.Length; i++) {
+        if (i < array.Length - 1)
             temp = temp + $"'{array[i]}', ";
         else temp = temp + $"'{array[i]}'";
     }
-    temp = temp + "]";
+    temp += "]";
     return temp;
 }
 
